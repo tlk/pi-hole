@@ -1351,6 +1351,7 @@ installScripts() {
         install -o "${USER}" -Dm755 -t "${PI_HOLE_INSTALL_DIR}" ./advanced/Scripts/*.sh
         install -o "${USER}" -Dm755 -t "${PI_HOLE_INSTALL_DIR}" ./automated\ install/uninstall.sh
         install -o "${USER}" -Dm755 -t "${PI_HOLE_INSTALL_DIR}" ./advanced/Scripts/COL_TABLE
+        install -o "${USER}" -Dm755 -t "${PI_HOLE_INSTALL_DIR}" ./advanced/Scripts/pihole-reenable
         install -o "${USER}" -Dm755 -t /usr/local/bin/ pihole
         install -Dm644 ./advanced/bash-completion/pihole /etc/bash_completion.d/pihole
         printf "%b  %b %s\\n" "${OVER}" "${TICK}" "${str}"
